@@ -23,4 +23,6 @@ func create():
 		print("Screen config: key=", key)
 		screens[key] = str(config_file.get_value("screens", key))
 
+	config_file.close()
+	
 	return screens
